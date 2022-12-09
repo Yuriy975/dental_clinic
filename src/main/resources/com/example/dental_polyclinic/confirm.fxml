@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="512.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dental_polyclinic.ConfirmController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="512.0" style="-fx-background-color: #2BAD38;">
+            <children>
+                <Button fx:id="YesButton" layoutX="98.0" layoutY="156.0" mnemonicParsing="false" onAction="#showDialog" prefHeight="87.0" prefWidth="316.0" style="-fx-background-color: #3B6DB9;" text="Так" textFill="WHITE">
+                    <font>
+                        <Font name="Montserrat-Regular" size="40.0" />
+                    </font>
+                </Button>
+                <Text fill="WHITE" layoutX="88.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Увійти як пацієнт?" textAlignment="CENTER">
+                    <font>
+                        <Font name="Montserrat-Regular" size="40.0" />
+                    </font>
+                </Text>
+                <Button fx:id="NoButton" layoutX="98.0" layoutY="275.0" mnemonicParsing="false" onAction="#showDialog2" prefHeight="87.0" prefWidth="316.0" style="-fx-background-color: #3B6DB9;" text="Ні" textFill="WHITE">
+                    <font>
+                        <Font name="Montserrat-Regular" size="40.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

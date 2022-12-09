@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="1024.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dental_polyclinic.EnterController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="1024.0" style="-fx-background-color: #fafafa;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane prefHeight="120.0" prefWidth="1024.0" style="-fx-background-color: #2BAD38;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <HBox prefHeight="120.0" prefWidth="1024.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-2.0">
+                            <children>
+                                <HBox prefHeight="120.0" prefWidth="450.0" HBox.hgrow="ALWAYS" />
+                                <VBox prefHeight="120.0" prefWidth="129.0" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                                        <VBox prefHeight="200.0" prefWidth="100.0">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Вхід" textAlignment="CENTER" wrappingWidth="130.5546875">
+                                                    <font>
+                                                        <Font name="Montserrat-Regular" size="50.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </VBox>
+                                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    </children>
+                                </VBox>
+                                <HBox prefHeight="120.0" prefWidth="447.0" HBox.hgrow="ALWAYS" />
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+                <HBox layoutX="-5.0" layoutY="120.0" prefHeight="591.0" prefWidth="1031.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="120.0">
+                    <children>
+                        <HBox prefHeight="591.0" prefWidth="262.0" HBox.hgrow="ALWAYS" />
+                        <VBox prefHeight="591.0" prefWidth="511.0">
+                            <children>
+                                <VBox prefHeight="69.0" prefWidth="511.0" VBox.vgrow="ALWAYS" />
+                                <VBox prefHeight="438.0" prefWidth="511.0" VBox.vgrow="ALWAYS">
+                                    <children>
+                                        <AnchorPane prefHeight="400.0" prefWidth="512.0" style="-fx-background-color: #2BAD38;">
+                                            <children>
+                                                <Button fx:id="modalAction" layoutX="98.0" layoutY="286.0" mnemonicParsing="false" onAction="#showDialog" prefHeight="87.0" prefWidth="316.0" style="-fx-background-color: #3B6DB9;" text="Увійти" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Montserrat-Regular" size="40.0" />
+                                                    </font>
+                                                </Button>
+                                                <Text fill="WHITE" layoutX="209.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логін" textAlignment="CENTER">
+                                                    <font>
+                                                        <Font name="Montserrat-Regular" size="40.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fill="WHITE" layoutX="189.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль" textAlignment="CENTER">
+                                                    <font>
+                                                        <Font name="Montserrat-Regular" size="40.0" />
+                                                    </font>
+                                                </Text>
+                                                <TextField fx:id="logfield" layoutX="45.0" layoutY="79.0" prefHeight="64.0" prefWidth="433.0">
+                                                    <font>
+                                                        <Font size="25.0" />
+                                                    </font>
+                                                </TextField>
+                                                <PasswordField fx:id="passfield" layoutX="45.0" layoutY="193.0" prefHeight="64.0" prefWidth="433.0">
+                                                    <font>
+                                                        <Font size="25.0" />
+                                                    </font>
+                                                </PasswordField>
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </VBox>
+                                <VBox prefHeight="84.0" prefWidth="511.0" VBox.vgrow="ALWAYS" />
+                            </children>
+                        </VBox>
+                        <HBox prefHeight="591.0" prefWidth="255.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="Regbtn" mnemonicParsing="false" onAction="#Regaction" prefHeight="43.0" prefWidth="124.0" style="-fx-background-color: #3B6DB9;" text="Реєстрація" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="100.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Montserrat-Regular" size="18.0" />
+                           </font>
+                        </Button>
+                     </children></HBox>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

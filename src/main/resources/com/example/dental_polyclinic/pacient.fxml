@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="1024.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dental_polyclinic.PacientController">
+    <children>
+      <ImageView fitHeight="712.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/стоматологія.jpg" />
+         </image>
+      </ImageView>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="1024.0" style="-fx-background-image: #fafafa;">
+            <children>
+                <AnchorPane layoutY="216.0" prefHeight="498.0" prefWidth="388.0" style="-fx-background-color: #2BAD38;">
+               <children>
+                        <Text fill="WHITE" layoutX="32.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вітаємо Вас! Ви увійшли як пацієнт." textAlignment="CENTER" wrappingWidth="324.5203857421875">
+                            <font>
+                                <Font name="Montserrat-Regular" size="28.0" />
+                            </font>
+                        </Text>
+                  <Text fill="WHITE" layoutX="32.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Для того, щоб попасти на прийом до стоматалога:" wrappingWidth="324.5203857421875">
+                     <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="46.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Оберіть вид послуги 2. Якщо дата та час прийому Вам підходить, підтвердіть її. Якщо ні, нажміть відповідну кнопку, система надасть Вам нову дату та час." wrappingWidth="296.5203857421875">
+                     <font>
+                        <Font name="Montserrat-Regular" size="27.0" />
+                     </font>
+                  </Text>
+               </children>
+                </AnchorPane>
+                <ImageView fitHeight="226.0" fitWidth="388.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/teeth.jpg" />
+                    </image>
+            </ImageView>
+            <Button fx:id="protez" layoutX="474.0" layoutY="150.0" mnemonicParsing="false" onAction="#prot" prefHeight="73.0" prefWidth="463.0" style="-fx-background-color: #3B6DB9;" text="Протезування" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat-Regular" size="40.0" />
+               </font>
+            </Button>
+            <Button fx:id="cleaning" layoutX="474.0" layoutY="255.0" mnemonicParsing="false" onAction="#vidb" prefHeight="73.0" prefWidth="463.0" style="-fx-background-color: #3B6DB9;" text="Відбілювання зубів" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat-Regular" size="40.0" />
+               </font>
+            </Button>
+            <Button fx:id="vurucn" layoutX="474.0" layoutY="360.0" mnemonicParsing="false" onAction="#vurv" prefHeight="73.0" prefWidth="463.0" style="-fx-background-color: #3B6DB9;" text="Вирівнювання зубів" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat-Regular" size="40.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete" layoutX="474.0" layoutY="466.0" mnemonicParsing="false" onAction="#vudl" prefHeight="73.0" prefWidth="463.0" style="-fx-background-color: #3B6DB9;" text="Видалення зубів" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat-Regular" size="40.0" />
+               </font>
+            </Button>
+            <Button fx:id="obstesh" layoutX="474.0" layoutY="572.0" mnemonicParsing="false" onAction="#osth" prefHeight="73.0" prefWidth="463.0" style="-fx-background-color: #3B6DB9;" text="Обстеження" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat-Regular" size="40.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

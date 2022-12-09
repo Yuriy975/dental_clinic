@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="1024.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dental_polyclinic.Time_dateController">
+    <children>
+        <AnchorPane prefHeight="120.0" prefWidth="1024.0" style="-fx-background-color: #2BAD38;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox prefHeight="120.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <HBox prefHeight="120.0" prefWidth="375.0" HBox.hgrow="ALWAYS" />
+                        <HBox prefHeight="120.0" prefWidth="266.0">
+                            <children>
+                                <VBox prefHeight="120.0" prefWidth="273.0" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                                        <VBox prefHeight="200.0" prefWidth="100.0">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Підтвердження" textAlignment="RIGHT" wrappingWidth="385.140625">
+                                                    <font>
+                                                        <Font name="Montserrat-Regular" size="50.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </VBox>
+                                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="120.0" prefWidth="375.0" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+        <HBox layoutY="120.0" prefHeight="593.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+            <children>
+                <HBox prefHeight="593.0" prefWidth="60.0" HBox.hgrow="ALWAYS" />
+                <HBox prefHeight="593.0" prefWidth="440.0">
+                    <children>
+                        <VBox prefHeight="593.0" prefWidth="547.0">
+                            <children>
+                                <VBox prefHeight="115.0" prefWidth="440.0" />
+                                <VBox prefHeight="75.0" prefWidth="440.0">
+                           <children>
+                              <Label prefHeight="87.0" prefWidth="440.0" text="Дата" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Montserrat-Regular" size="40.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <TextField fx:id="date_field" onAction="#Date_offer" prefHeight="65.0" prefWidth="440.0" />
+                           </children>
+                                </VBox>
+                                <VBox prefHeight="88.0" prefWidth="440.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="440.0" text="Час" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Montserrat-Regular" size="40.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <TextField fx:id="time_field" onAction="#Time_offer" prefHeight="65.0" prefWidth="440.0" />
+                           </children>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="440.0" text="   Вам підходить дата" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Montserrat-Regular" size="40.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="56.0" prefWidth="440.0" text="     та час прийому?" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Montserrat-Regular" size="40.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                                </VBox>
+                        <VBox prefHeight="119.0" prefWidth="440.0" />
+                                <VBox prefHeight="126.0" prefWidth="440.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="yes_button" mnemonicParsing="false" onAction="#YesClick" prefHeight="62.0" prefWidth="220.0" style="-fx-background-color: #3B6DB9;" text="Так" textFill="WHITE">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="29.0" />
+                                    <HBox prefHeight="100.0" prefWidth="71.0" />
+                                    <Button fx:id="no_button" mnemonicParsing="false" onAction="#NoClick" prefHeight="62.0" prefWidth="220.0" style="-fx-background-color: #3B6DB9;" text="Ні" textFill="WHITE">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                                </VBox>
+                                <VBox prefHeight="133.0" prefWidth="440.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox prefHeight="593.0" prefWidth="60.0" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

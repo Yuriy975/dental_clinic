@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="512.0" style="-fx-background-color: #008000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dental_polyclinic.ModalController">
+    <children>
+        <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="390.0" prefWidth="502.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Text fill="#336eb5" layoutX="74.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ви ще не зареєстровані!" textAlignment="CENTER" wrappingWidth="363.50592041015625">
+                    <font>
+                        <Font name="Montserrat-Regular" size="40.0" />
+                    </font>
+                </Text>
+                <Button fx:id="Bzero" layoutX="98.0" layoutY="223.0" mnemonicParsing="false" onAction="#Closewindow" prefHeight="87.0" prefWidth="316.0" style="-fx-background-color: #3B6DB9;" text="Ок" textFill="WHITE">
+                    <font>
+                        <Font name="Montserrat-Regular" size="40.0" />
+                    </font>
+                </Button>
+            </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+        </AnchorPane>
+    </children>
+</AnchorPane>

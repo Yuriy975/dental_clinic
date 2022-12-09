@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="1024.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dental_polyclinic.DentistController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="1024.0" style="-fx-background-color: #fafafa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane prefHeight="120.0" prefWidth="1024.0" style="-fx-background-color: #2BAD38;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <HBox prefHeight="120.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <HBox prefHeight="120.0" prefWidth="71.0" HBox.hgrow="ALWAYS" />
+                                <VBox prefHeight="120.0" prefWidth="698.0" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                                        <VBox prefHeight="63.0" prefWidth="755.0">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Електронний кабінет стоматолога" textAlignment="CENTER" wrappingWidth="834.5546875">
+                                                    <font>
+                                                        <Font name="Montserrat-Regular" size="50.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </VBox>
+                                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    </children>
+                                </VBox>
+                                <HBox prefHeight="120.0" prefWidth="123.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                              <HBox prefHeight="120.0" prefWidth="290.0">
+                                 <children>
+                                    <ImageView fitHeight="132.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/icon.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                           </children></HBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+            <VBox layoutY="120.0" prefHeight="593.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+               <children>
+                  <VBox prefHeight="143.0" prefWidth="1024.0">
+                     <children>
+                        <HBox prefHeight="199.0" prefWidth="1024.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox prefHeight="140.0" prefWidth="209.0">
+                                 <children>
+                                    <ImageView fitHeight="171.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/teeth.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="825.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <VBox prefHeight="143.0" prefWidth="777.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <HBox prefHeight="45.0" prefWidth="748.0" HBox.hgrow="ALWAYS" />
+                                                      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="45.0" prefWidth="198.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Button fx:id="Exit" mnemonicParsing="false" onAction="#Exitaction" prefHeight="42.0" prefWidth="115.0" text="Вихід">
+                                                               <font>
+                                                                  <Font name="System Bold" size="15.0" />
+                                                               </font>
+                                                            </Button>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                             </children></VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Label text="Перелік записів на прийом:">
+                                                   <font>
+                                                      <Font name="Montserrat-Regular" size="40.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="461.0" prefWidth="1024.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="110.0" prefWidth="1024.0" VBox.vgrow="ALWAYS" />
+                        <VBox prefHeight="460.0" prefWidth="1024.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox prefHeight="330.0" prefWidth="1024.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox prefHeight="324.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="413.0" prefWidth="824.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <TableView fx:id="tableView" prefHeight="330.0" prefWidth="883.0">
+                                            <columns>
+                                              <TableColumn fx:id="Date_pr" prefWidth="409.0" text="Дата" />
+                                              <TableColumn fx:id="Time_pr" minWidth="0.0" prefWidth="414.0" text="Час" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="352.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children></VBox>
+                        <VBox prefHeight="124.0" prefWidth="1024.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <AnchorPane prefHeight="164.0" prefWidth="1024.0">
+                                 <children>
+                                    <Label fx:id="labelCount" layoutX="43.0" layoutY="9.0" prefHeight="26.0" prefWidth="264.0" text="Кількість записів" textOverrun="CLIP">
+                                       <font>
+                                          <Font name="Montserrat-Regular" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children></VBox>
+                     </children></VBox>
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
